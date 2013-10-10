@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>留言板</title>
+<link rel="stylesheet" type="text/css" href="css/liuyb.css" >
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="message_title">
+  <h2>如果您对该项目感兴趣，请你<span>拨打招商热线</span>或<span>给我们留言</span>，我们会在第一时间与您取得联系！</h2>
+</div>
+<div class="message_cont">
+  <ul class="mess_cont_top">
+    <li><strong>知名招商项目汇聚平台</strong><br>
+      汇聚海量知名、高诚信度品牌招商项目，随时为您提供招商信息</li>
+    <li><strong>事实和口碑胜于一切</strong><br>
+      18万创业者通过找项目、迈出成功创业第一步；</li>
+    <li class="clearBorder"><strong>诚信的商机发布平台</strong><br>
+      我们只推荐拥有合法资质、证照齐全、诚信经营的项目！</li>
+  </ul>
+  <div class="mess_cont_left" id="J_builtinUbd">
+    <form method="post" action="" name="gbookform"  id="gbookform"   target='_blank'>
+      <fieldset>
+        <div class="ui-form-left">
+          <div class="tit-img">
+            <h1>《快速留言》</h1>
+          </div>
+          <div class="ui-form-item">
+            <p class="ui-form-explain"></p>
+            <label for="visitorName" class="ui-label"><em class="ui-form-required">*</em>姓名：</label>
+            <input class="ui-input" type="text" necessary="necessary" datatype="nickname" nullmsg="请输入您的姓名" errormsg="仅支持1-12位中文、字母、数字、下划线或减号" id="text_xm" name="xm">
+          </div>
+          <div class="ui-form-item">
+            <p class="ui-form-explain"></p>
+            <label for="visitorMobile" class="ui-label"><em class="ui-form-required">*</em>手机：</label>
+            <input class="ui-input" type="text" necessary="necessary" datatype="phone" nullmsg="请输入您经常使用的手机号" errormsg="手机号码有误或者格式不正确，请重新输入" name="mobile" id="text_mobile" >
+          </div>
+          <div class="ui-form-item">
+            <p class="ui-form-explain"></p>
+            <label for="visitorEmail" class="ui-label">邮箱：</label>
+            <input class="ui-input" type="text" id="visitorEmail" maxlen="100" lenmsg="您输入的内容超过100字" ignore="ignore" datatype="email" nullmsg="请输入您的常用邮箱" errormsg="您输入的邮箱格式不正确，请重新输入"  name="email" id="email" >
+          </div>
+          <div class="ui-form-item">
+            <p class="ui-form-explain"></p>
+            <label for="visitorAddr" class="ui-label">地址：</label>
+            <input class="ui-input"  type="text" id="visitorAddr" maxlen="40" lenmsg="您输入字数超过40字" ignore="ignore" datatype="len" errormsg="您输入字数超过40字"  name="text_address" maxlength="41" name="add" id="text_add">
+          </div>
+        </div>
+        <div class="ui-form-right">
+          <div class="ui-form-item t">
+            <p class="ui-form-explain"></p>
+            <label class="ui-label h">留言内容</label>
+            <textarea class="ui-textarea" name="ly" value="" id="text_content" necessary="necessary"></textarea>
+          </div>
+          <div class="shortcut-message">
+            <h3>不知写什么好？<span> [点击这里] </span>选择下列快捷留言</h3>
+            <ul id="J_preinstallMsg">
+              <li class="add1">此项目很好，请尽快联系我详谈。</li>
+              <li class="add2">请问我所在的地区有加盟商了吗？</li>
+              <li class="add3">我已留下邮箱，请将详细资料发邮件给我</li>
+              <li class="add4">做为此项目的代理加盟商能得到哪些支持？</li>
+            </ul>
+          </div>
+          <div class="ui-form-item ui-form-last">
+            <label class="ui-label"></label>
+            <input class="ui-submit-btn"  value=" " onClick="return checkInput();">
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="ui-bottom"></div>
+</div>
+</body>
+</html>
